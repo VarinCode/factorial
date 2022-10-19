@@ -1,5 +1,5 @@
 // npm install
-// ts-done 02-script.ts
+// ts-node 02-script.ts
 // tsc 02-script.ts
 
 import { createInterface } from "readline";
@@ -8,7 +8,7 @@ const readline = createInterface({
     output: process.stdout
 });
 
-readline.question('จำนวนที่รับค่ามาคือ ' , (value:any) => {
+readline.question('จำนวนที่รับค่ามาคือ ' , (value:any):void => {
     const formula:string = 'n! = n(n-1)(n-2) ... 2 x 1';
     let object:{input:number , array:Array<number>, result:number , prototype:number} = {
         input: value,
