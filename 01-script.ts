@@ -8,7 +8,7 @@ const factorial = (array:number[] , result:number , prototype:number):string => 
     while(input >= 1){
         result *= input;
         array.push(input);
-        --input;
+        --input; 
     }
     return `จำนวนที่รับค่ามาคือ ${prototype}! \n${prototype}! = ${array.join(' x ')} = ${result}`;
 }
