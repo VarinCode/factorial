@@ -14,7 +14,7 @@ const factorial = readline.question('จำนวนที่รับค่า�
         prototype: number;
         array: Array<number>;
         result: number;
-        decrease: any;
+        decrease: Function;
     }; let object: Obj = {
         input: Math.round(value),
         prototype: Math.round(value),
