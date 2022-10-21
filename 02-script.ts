@@ -22,8 +22,8 @@ const factorial = readline.question('จำนวนที่รับค่า�
         result: 1,
         decrease(parameter:number){ parameter = this.input; return parameter; }
     }
-    if (Math.round(value) == 0 || Math.round(value) <= 0 ) console.log(new Error('error!'));
-        else if (Math.round(value) == 1) console.log(formula, `\n${object.prototype}! = ${object.result}`);
+    if (Math.round(value) <= 0 ) console.log(new Error('error!'));
+        else if (Math.round(value) == 0 || Math.round(value) == 1) console.log(formula, `\n${object.prototype}! = ${object.result}`);
             else if (Math.round(value) > 1){
                 while (object.decrease() > 1) {
                     object.result *= object.input;
@@ -35,4 +35,4 @@ const factorial = readline.question('จำนวนที่รับค่า�
     } else console.log(new Error('ต้องใส่เป็นตัวเลขเท่านั้น!'));
     readline.close();
 });
-factorial;
+factorial; 
