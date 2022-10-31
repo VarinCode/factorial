@@ -35,4 +35,4 @@ const factorial = readline.question('จำนวนที่รับค่า�
     } else console.log(new Error('ต้องใส่เป็นตัวเลขเท่านั้น!'));
     readline.close();
 });
-factorial; 
+factorial;
