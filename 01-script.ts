@@ -1,5 +1,5 @@
 // npm install
-// ts-done 01-script.ts
+// ts-node 01-script.ts
 // tsc 01-script.ts
 
 const formula:string = 'n! = n(n-1)(n-2) ... 2 x 1';
